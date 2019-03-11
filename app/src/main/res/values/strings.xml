@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">newsfeed</string>
+    <string name="login_name">Email....</string>
+    <string name="login_pass">Password....</string>
+    <string name="login_btn">login</string>
+    <string name="signup_btn">signup</string>
+    <string name="cellno">Cell Number....</string>
+    <string name="username">Name....</string>
+    <string name="clg">College....</string>
+    <string name="confirm_pass">Confirm password....</string>
+    <string name="college">SMVEC</string>
+    <string name="details">College details</string>
+    <string name="progress">student progress</string>
+    <string name="coactivity">Co-curicular activities</string>
+    <string-array name="degrees">
+        <item>Degree....</item>
+        <item>B.Tech</item>
+        <item>M.Tech</item>
+        <item>MBA</item>
+        <item>MCA</item>
+    </string-array>
+    <string-array name="Streams">
+        <item>Streams....</item>
+        <item>CSE</item>
+        <item>ECE</item>
+        <item>IT</item>
+        <item>EEE</item>
+        <item>MECH</item>
+        <item>ICE</item>
+    </string-array>
+</resources>

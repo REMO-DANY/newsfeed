@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".signup">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/username"
+        android:hint="@string/username"
+        android:layout_margin="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/signup_username"
+        app:layout_constraintTop_toBottomOf="@id/username"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_margin="16dp"
+        android:inputType="textEmailAddress"
+        android:hint="@string/login_name" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/signup_password"
+        app:layout_constraintTop_toBottomOf="@id/signup_username"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_margin="16dp"
+        android:inputType="textPassword"
+        android:hint="@string/login_pass" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/confirm_pass"
+        android:hint="@string/confirm_pass"
+        android:inputType="textPassword"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/signup_password"
+        android:layout_margin="16dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/cellno"
+        android:maxLength="10"
+        app:layout_constraintTop_toBottomOf="@id/confirm_pass"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_margin="16dp"
+        android:inputType="number"
+        android:hint="@string/cellno" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/college"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/cellno"
+        android:layout_margin="16dp"
+        android:hint="@string/clg"
+        android:inputType="text"/>
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/degree"
+        android:entries="@array/degrees"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/college"
+        android:layout_margin="16dp">
+    </Spinner>
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/stream"
+        android:entries="@array/Streams"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/degree"
+        android:layout_margin="16dp">
+    </Spinner>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/signup"
+        app:layout_constraintTop_toBottomOf="@id/stream"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="@string/signup_btn"
+        android:layout_margin="16dp"/>
+
+</android.support.constraint.ConstraintLayout>

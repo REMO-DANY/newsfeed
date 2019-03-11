@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/college_name"
+        android:title="@string/college" />
+    <item
+        android:id="@+id/college_details"
+        android:title="@string/details" />
+    <item
+        android:id="@+id/progress"
+        android:title="@string/progress" />
+    <item
+        android:id="@+id/co_activitiy"
+        android:title="@string/coactivity" />
+    <item
+        android:id="@+id/settings"
+        android:icon="@drawable/settings"
+        android:title=""/>
+</menu>
